@@ -1,0 +1,17 @@
+.navigation {
+  align-self: center;
+  &__list {
+    display: flex;
+  }
+  &__item {
+
+  }
+  &__link {
+    margin: 0 30px;
+    display: block;
+    color: $navigation-color;
+    font-family: $GoogleSans-Regular;
+    font-size: 24px;
+    text-decoration: none;
+  }
+}

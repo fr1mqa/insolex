@@ -1,0 +1,14 @@
+.logo {
+  align-self: center;
+  display: flex;
+  align-items: flex-start;
+  &__sneaker {
+    width: 63.5px;
+    height: 40.3px;
+    margin-right: 38px;
+  }
+  &__title {
+    width: 176px;
+    height: 35.9px;
+  }
+}

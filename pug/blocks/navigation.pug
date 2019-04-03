@@ -1,0 +1,7 @@
+- let navigationList = [{name: 'Главная', link: 'index.html'}, {name: 'Конструкция бустера', link: 'construction.html'}, {name: 'Продукция', link: 'products.html'}, {name: 'Контакты', link: 'contacts.html'}];
+
+nav.navigation
+    ul.navigation__list
+        each item in navigationList
+            li.navigation__item
+                a.navigation__link(href= item.link)=item.name

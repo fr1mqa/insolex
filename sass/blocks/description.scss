@@ -1,0 +1,52 @@
+.description {
+  background: url('../img/description-bg.jpg') no-repeat center top;
+  background-size: cover;
+  & .container {
+    padding: 95px 15px 85px;
+    border-bottom: 3px solid $descr-block-border-color;
+  }
+  &__title {
+    margin: 0;
+    padding: 0 20px 35px;
+    color: $descr-title-color;
+    font-family: $GoogleSans-Regular;
+    font-size: 39px;
+    line-height: 49px;
+    letter-spacing: -0.7px;
+    text-align: center;
+    border-bottom: 2px solid $descr-border-color;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 100px 85px 0;
+  }
+  &__inner {
+    max-width: 630px;
+  }
+  &__text {
+    margin: 0 0 20px;
+    color: $descr-text-color;
+    font-family: $GoogleSans-Regular;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.3px;
+    &:nth-last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__image {
+    width: 460px;
+  }
+  &__caption {
+    margin: 0 auto;
+    max-width: 990px;
+    color: $descr-caption-color;
+    font-family: $GoogleSans-Regular;
+    font-size: 39px;
+    line-height: 49px;
+    letter-spacing: -0.7px;
+    text-align: center;
+  }
+}
