@@ -4,6 +4,9 @@
   & .container {
     padding: 95px 15px 85px;
     border-bottom: 3px solid $descr-block-border-color;
+    @media (max-width: 1280px) {
+      padding: 65px 15px 60px;
+    }
   }
   &__title {
     margin: 0;
@@ -15,15 +18,33 @@
     letter-spacing: -0.7px;
     text-align: center;
     border-bottom: 2px solid $descr-border-color;
+    @media (max-width: 1280px) {
+      font-size: 25px;
+      line-height: 31px;
+      letter-spacing: -0.45px;
+    }
+    @media (max-width: 900px) {
+      font-size: 20px;
+    }
   }
   &__wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 100px 100px 85px 0;
+    @media (max-width: 1280px) {
+      margin: 70px 60px 70px 0;
+    }
+    @media (max-width: 900px) {
+      flex-direction: column;
+      margin-right: 0;
+    }
   }
   &__inner {
     max-width: 630px;
+    @media (max-width: 1280px) {
+      max-width: 400px;
+    }
   }
   &__text {
     margin: 0 0 20px;
@@ -32,12 +53,22 @@
     font-size: 20px;
     line-height: 29px;
     letter-spacing: -0.3px;
+    @media (max-width: 1280px) {
+      font-size: 13px;
+      line-height: 19px;
+    }
     &:nth-last-child {
       margin-bottom: 0;
     }
   }
   &__image {
     width: 460px;
+    @media (max-width: 1280px) {
+      width: 305px;
+    }
+    @media (max-width: 900px) {
+      width: 290px;
+    }
   }
   &__caption {
     margin: 0 auto;
@@ -48,5 +79,13 @@
     line-height: 49px;
     letter-spacing: -0.7px;
     text-align: center;
+    @media (max-width: 1280px) {
+      font-size: 25px;
+      line-height: 31px;
+      letter-spacing: -0.45px;
+    }
+    @media (max-width: 900px) {
+      font-size: 20px;
+    }
   }
 }

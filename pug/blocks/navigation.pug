@@ -1,7 +1,13 @@
-- let navigationList = [{name: 'Главная', link: 'index.html'}, {name: 'Конструкция бустера', link: 'construction.html'}, {name: 'Продукция', link: 'products.html'}, {name: 'Контакты', link: 'contacts.html'}];
+- let navigationList = [{name: 'Главная', link: 'index.html', cart: false}, {name: 'Конструкция бустера', link: 'construction.html', cart: false}, {name: 'Продукция', link: 'products.html', cart: false}, {name: 'Контакты', link: 'contacts.html', cart: false}, {name: '', link: 'cart.html', cart: true}];
 
 nav.navigation
+    input(type="checkbox").navigation__input#toggle
+    label(for="toggle").navigation__label
+        span.burger-menu
     ul.navigation__list
         each item in navigationList
             li.navigation__item
                 a.navigation__link(href= item.link)=item.name
+                    if item.cart
+                        svg.navigation__icon
+                            use(xlink:href='img/sprite.svg#cart')

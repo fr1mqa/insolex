@@ -23,4 +23,10 @@ body {
   max-width: 1560px;
   margin: 0 auto;
   padding: 0 15px;
+  @media (max-width: 1280px) {
+    max-width: 1040px;
+  }
+  @media (max-width: 900px) {
+    padding: 0 30px;
+  }
 }

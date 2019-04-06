@@ -1,0 +1,46 @@
+@mixin plus($x, $y, $width, $height, $plus-height, $color) {
+  position: absolute;
+  top: $y;
+  left: $x;
+  width: $width;
+  height: $height;
+  &::before {
+    content: '';
+    position: absolute;
+    top: $width / 2 - $plus-height / 2;
+    left: 0;
+    width: $width;
+    height: $plus-height;
+    background-color: $color;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: $width / 2 - $plus-height / 2;
+    left: 0;
+    width: $width;
+    height: $plus-height;
+    background-color: $color;
+    transform: rotate(90deg);
+  }
+}
+
+@mixin plus-position($x, $y, $width, $height, $plus-height) {
+  top: $y;
+  left: $x;
+  width: $width;
+  height: $height;
+  &::before {
+    top: $width / 2 - $plus-height / 2;
+    left: 0;
+    width: $width;
+  }
+  &::after {
+    content: '';
+    position: absolute;
+    top: $width / 2 - $plus-height / 2;
+    left: 0;
+    width: $width;
+    transform: rotate(90deg);
+  }
+}

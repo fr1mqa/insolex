@@ -1,11 +1,28 @@
 .info {
+  overflow: hidden;
   background: url("../img/insolex.png") no-repeat right top;
+  @media (max-width: 1280px) {
+    background-size: auto 100%;
+  }
+  @media (max-width: 900px) {
+    background-size: auto 746px;
+    background-position: center bottom;
+    padding-top: 50px;
+  }
   & .container {
+    position: relative;
     min-height: 940px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    @media (max-width: 1280px) {
+      min-height: 630px;
+    }
+    @media (max-width: 900px) {
+      min-height: 1000px;
+      justify-content: flex-start;
+    }
   }
   &__title {
     margin: 0 0 55px;
@@ -17,6 +34,17 @@
     line-height: 71px;
     letter-spacing: -1.2px;
     text-transform: uppercase;
+    @media(max-width: 1280px) {
+      font-size: 44px;
+      line-height: 47px;
+      letter-spacing: -0.8px;
+      margin: 0 0 40px;
+    }
+    @media (max-width: 900px) {
+    }
+    @media (max-width: 350px) {
+      font-size: 40px;
+    }
   }
   &__text {
     margin: 0 0 95px;
@@ -26,7 +54,16 @@
     line-height: 47px;
     letter-spacing: -0.8px;
     text-transform: uppercase;
-
+    @media (max-width: 1280px) {
+      font-size: 29px;
+      line-height: 30px;
+      letter-spacing: -0.5px;
+      margin: 0 0 70px;
+    }
+    @media (max-width: 900px) {
+      display: none;
+      margin: 0 0 50px;
+    }
     &--throw {
       position: relative;
       padding: 0 8px;
@@ -58,5 +95,75 @@
     border-radius: 15px;
     box-shadow: 0 0 80px $info-button-shadow-color;
     cursor: pointer;
+    @media (max-width: 1280px) {
+      padding: 10px 43px;
+      font-size: 25px;
+    }
+    @media (max-width: 900px) {
+      font-size: 21px;
+      border: none;
+
+    }
+  }
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  &__plus-1 {
+    @include plus(-40px, 90px, 53px, 53px, 5px, #d1d3d4);
+    @media (max-width: 1280px) {
+      @include plus-position(-30px, 70px, 35px, 35px, 4px);
+    }
+    @media (max-width: 900px) {
+      @include plus-position(20px, -25px, 26px, 26px, 4px);
+    }
+  }
+  &__plus-2 {
+    @include plus(500px, 100px, 80px, 80px, 7px, #ed1c24);
+    @media (max-width: 1280px) {
+      @include plus-position(320px, 70px, 55px, 55px, 5px);
+    }
+    @media (max-width: 900px) {
+      @include plus-position(260px, -25px, 41px, 41px, 5px);
+    }
+  }
+  &__plus-3 {
+    @include plus(700px, 300px, 45px, 45px, 4px, #d1d3d4);
+    @media (max-width: 1280px) {
+      @include plus-position(460px, 210px, 30px, 30px, 5px);
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__plus-4 {
+    @include plus(1535px, 360px, 45px, 45px, 4px, #d1d3d4);
+    @media (max-width: 1280px) {
+      @include plus-position(1030px, 240px, 30px, 30px, 4px);
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__plus-5 {
+    @include plus(600px, 640px, 53px, 53px, 5px, #d1d3d4);
+    @media (max-width: 1280px) {
+      @include plus-position(400px, 426px, 35px, 35px, 4px);
+    }
+    @media (max-width: 900px) {
+      display: none;
+    }
+  }
+  &__plus-6 {
+    @include plus(-80px, 800px, 45px, 45px, 4px, #d1d3d4);
+    @media (max-width: 1280px) {
+      @include plus-position(-60px, 540px, 30px, 30px, 4px);
+    }
+    @media (max-width: 900px) {
+      @include plus-position(60px, 260px, 25px, 25px, 4px);
+    }
   }
 }

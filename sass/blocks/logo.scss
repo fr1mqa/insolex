@@ -6,9 +6,27 @@
     width: 63.5px;
     height: 40.3px;
     margin-right: 38px;
+    @media (max-width: 1280px) {
+      width: 42.3px;
+      height: 26.8px;
+      margin-right: 25px;
+    }
+    @media (max-width: 900px) {
+      width: 29.2px;
+      height: 19.6px;
+      margin-right: 18px;
+    }
   }
   &__title {
     width: 176px;
     height: 35.9px;
+    @media (max-width: 1280px) {
+      width: 117.1px;
+      height: 23.9px;
+    }
+    @media (max-width: 900px) {
+      width: 85px;
+      height: 17.4px;
+    }
   }
 }

@@ -1,8 +1,14 @@
 .header {
-
+  position: relative;
   & .container {
     display: flex;
     justify-content: space-between;
     min-height: 140px;
+    @media (max-width: 1280px) {
+      min-height: 94px;
+    }
+    @media (max-width: 900px) {
+      min-height: 65px;
+    }
   }
 }

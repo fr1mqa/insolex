@@ -1,5 +1,10 @@
 .advantages {
+  position: relative;
   padding: 110px 0 170px;
+  overflow: hidden;
+  @media (max-width: 1280px) {
+    padding: 70px 0 130px;
+  }
   & .container {
   }
   &__title {
@@ -13,6 +18,19 @@
     letter-spacing: -1.2px;
     text-transform: uppercase;
     border-bottom: 5px solid $advantages-border-color;
+    @media (max-width: 1280px) {
+      max-width: 600px;
+      padding-bottom: 35px;
+      margin: 0 0 70px;
+      font-size: 44px;
+      line-height: 47px;
+      letter-spacing: -0.79px;
+    }
+    @media (max-width: 900px) {
+      padding-bottom: 15px;
+      font-size: 20px;
+      line-height: 32px;
+    }
     &--red {
       color: $advantages-title-red-color;
     }
@@ -21,6 +39,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    @media (max-width: 900px) {
+      justify-content: center;
+    }
   }
   &__item {
     display: flex;
@@ -30,6 +51,18 @@
     margin-right: 30px;
     font-family: $GoogleSans-Regular;
     color: $advantages-item-color;
+    @media (max-width: 1280px) {
+      max-width: 450px;
+    }
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+      max-width: 260px;
+      text-align: center;
+    }
+    @media (max-width: 550px) {
+      margin-right: 0;
+    }
   }
   &__name {
     margin: 0 0 5px;
@@ -38,7 +71,11 @@
     letter-spacing: -0.4px;
     font-weight: 400;
     text-transform: uppercase;
-    background: url(../img/sprite.svg#time);
+    @media (max-width: 1280px) {
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: -0.3px;
+    }
   }
   &__description {
     display: flex;
@@ -47,6 +84,11 @@
     font-size: 20px;
     line-height: 29px;
     letter-spacing: -0.3px;
+    @media (max-width: 1280px) {
+      font-size: 13px;
+      line-height: 19px;
+      letter-spacing: -0.3px;
+    }
   }
   &__wrapper {
   }
@@ -55,5 +97,55 @@
     margin-right: 35px;
     width: 110px;
     height: 100px;
+    @media (max-width: 1280px) {
+      width: 75px;
+      height: 67px;
+    }
+    @media (max-width: 900px) {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+  &__plus {
+    &-1 {
+      @include plus(30px, 560px, 55px, 55px, 4px, #d1d3d4);
+      @media (max-width: 1280px) {
+        @include plus-position(50px, 400px, 36px, 36px, 4px)
+      }
+    }
+    &-2 {
+      @include plus(1750px, 330px, 50px, 50px, 4px, #d1d3d4);
+      @media (max-width: 1280px) {
+        @include plus-position(1100px, 250px, 30px, 30px, 4px)
+      }
+    }
+    &-3 {
+      @include plus(880px, 850px, 40px, 40px, 4px, #d1d3d4);
+      @media (max-width: 1280px) {
+        @include plus-position(580px, 600px, 30px, 30px, 4px)
+      }
+    }
+    &-4 {
+      @include plus(1850px, 830px, 53px, 53px, 4px, #d1d3d4);
+      @media (max-width: 1280px) {
+        @include plus-position(1140px, 600px, 34px, 34px, 4px)
+      }
+    }
+    &-5 {
+      @include plus(50px, 1030px, 40px, 40px, 4px, #d1d3d4);
+      @media (max-width: 1280px) {
+        @include plus-position(70px, 680px, 30px, 30px, 4px)
+      }
+    }
+    &-wrapper {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
   }
 }
