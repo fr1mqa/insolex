@@ -1,6 +1,13 @@
 .info {
   overflow: hidden;
   background: url("../img/insolex.png") no-repeat right top;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../img/insolex@2x.png");
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    background-image: url("../img/insolex@3x.png");
+  }
   @media (max-width: 1280px) {
     background-size: auto 100%;
   }
@@ -113,54 +120,54 @@
     height: 100%;
   }
   &__plus-1 {
-    @include plus(-40px, 90px, 53px, 53px, 5px, #d1d3d4);
+    @include plus(-2%, 9%, 53px, 53px, 5px, #d1d3d4);
     @media (max-width: 1280px) {
-      @include plus-position(-30px, 70px, 35px, 35px, 4px);
+      @include plus-position(-2%, 9%, 35px, 35px, 4px);
     }
     @media (max-width: 900px) {
       @include plus-position(20px, -25px, 26px, 26px, 4px);
     }
   }
   &__plus-2 {
-    @include plus(500px, 100px, 80px, 80px, 7px, #ed1c24);
+    @include plus(30%, 11%, 80px, 80px, 7px, #ed1c24);
     @media (max-width: 1280px) {
-      @include plus-position(320px, 70px, 55px, 55px, 5px);
+      @include plus-position(30%, 11%, 55px, 55px, 5px);
     }
     @media (max-width: 900px) {
       @include plus-position(260px, -25px, 41px, 41px, 5px);
     }
   }
   &__plus-3 {
-    @include plus(700px, 300px, 45px, 45px, 4px, #d1d3d4);
+    @include plus(45%, 33%, 45px, 45px, 4px, #d1d3d4);
     @media (max-width: 1280px) {
-      @include plus-position(460px, 210px, 30px, 30px, 5px);
+      @include plus-position(45%, 33%, 30px, 30px, 5px);
     }
     @media (max-width: 900px) {
       display: none;
     }
   }
   &__plus-4 {
-    @include plus(1535px, 360px, 45px, 45px, 4px, #d1d3d4);
+    @include plus(98%, 40%, 45px, 45px, 4px, #d1d3d4);
     @media (max-width: 1280px) {
-      @include plus-position(1030px, 240px, 30px, 30px, 4px);
+      @include plus-position(98%, 40%, 30px, 30px, 4px);
     }
     @media (max-width: 900px) {
       display: none;
     }
   }
   &__plus-5 {
-    @include plus(600px, 640px, 53px, 53px, 5px, #d1d3d4);
+    @include plus(40%, 70%, 53px, 53px, 5px, #d1d3d4);
     @media (max-width: 1280px) {
-      @include plus-position(400px, 426px, 35px, 35px, 4px);
+      @include plus-position(40%, 70%, 35px, 35px, 4px);
     }
     @media (max-width: 900px) {
       display: none;
     }
   }
   &__plus-6 {
-    @include plus(-80px, 800px, 45px, 45px, 4px, #d1d3d4);
+    @include plus(-5%, 85%, 45px, 45px, 4px, #d1d3d4);
     @media (max-width: 1280px) {
-      @include plus-position(-60px, 540px, 30px, 30px, 4px);
+      @include plus-position(-5%, 85%, 30px, 30px, 4px);
     }
     @media (max-width: 900px) {
       @include plus-position(60px, 260px, 25px, 25px, 4px);

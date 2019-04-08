@@ -1,6 +1,13 @@
 .description {
   background: url('../img/description-bg.jpg') no-repeat center top;
   background-size: cover;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    background-image: url("../img/description-bg@2x.jpg");
+  }
+
+  @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+    background-image: url("../img/description-bg@3x.jpg");
+  }
   & .container {
     padding: 95px 15px 85px;
     border-bottom: 3px solid $descr-block-border-color;
