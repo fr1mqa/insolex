@@ -1,0 +1,39 @@
+.team {
+  & .container {
+
+  }
+  &__title {
+    margin: 100px 0 70px;
+    color: $team-title-color;
+    font-family: $GoogleSans-Bold;
+    font-size: 52px;
+    line-height: 50px;
+    text-transform: uppercase;
+    &--red {
+      color: $team-title-red-color;
+    }
+  }
+  &__list {
+
+  }
+  &__item {
+
+  }
+  &__image {
+    &-wrapper {
+
+    }
+  }
+  &__text-wrapper {
+
+  }
+  &__name {
+
+  }
+  &__position {
+
+  }
+  &__description {
+
+  }
+}

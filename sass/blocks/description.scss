@@ -69,12 +69,11 @@
     }
   }
   &__image {
-    width: 460px;
+    width: 471.3px;
+    height: 236px;
     @media (max-width: 1280px) {
-      width: 305px;
-    }
-    @media (max-width: 900px) {
-      width: 290px;
+      width: 314px;
+      height: 169px;
     }
   }
   &__caption {
