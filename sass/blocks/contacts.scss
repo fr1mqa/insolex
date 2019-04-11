@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   z-index: 5;
+  min-height: 85vh;
   @media (max-width: 1280px) {
     min-height: 85vh;
   }
@@ -92,6 +93,37 @@
       max-height: 360px;
     }
   }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+    @media (max-width: 900px) {
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    padding: 10px;
+    display: block;
+  }
+  &__icon-1 {
+    width: 44.8px;
+    height: 25.6px;
+  }
+  &__icon-2 {
+    width: 22.3px;
+    height: 43px;
+  }
+  &__icon-3 {
+    width: 34.9px;
+    height: 34.9px;
+  }
+
   &__inner {
     position: absolute;
     left: 0;
