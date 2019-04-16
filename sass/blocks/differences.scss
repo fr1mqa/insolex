@@ -1,4 +1,5 @@
 .differences {
+  position: relative;
   padding: 80px 0 60px;
   @media (max-width: 1280px) {
     padding: 50px 0 20px;
@@ -122,5 +123,28 @@
       line-height: 23px;
       letter-spacing: -0.29px;
     }
+  }
+  &__inner {
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  &__plus-1 {
+    @include plus(90%, 8%, 35px, 35px, 5px, #d1d3d4);
+  }
+  &__plus-2 {
+    @include plus(7%, 12%, 35px, 35px, 5px, #d1d3d4);
+  }
+  &__plus-3 {
+    @include plus(76%, 21%, 30px, 30px, 4px, #d1d3d4);
+  }
+  &__plus-4 {
+    @include plus(91%, 37%, 50px, 50px, 4px, #d1d3d4);
+  }
+  &__plus-5 {
+    @include plus(0%, 92%, 30px, 30px, 4px, #d1d3d4);
   }
 }

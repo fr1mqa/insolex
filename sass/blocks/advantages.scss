@@ -1,4 +1,5 @@
 .advantages {
+  position: relative;
   padding: 90px 0 100px;
   @media (max-width: 1280px) {
     padding: 60px 0 80px;
@@ -91,18 +92,23 @@
     }
   }
   &__inner {
-
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
   &__plus-1 {
-
+    @include plus(75%, 5%, 300px, 300px, 85px, #f6f6f6);
   }
   &__plus-2 {
-
+    @include plus(17%, 38%, 300px, 300px, 85px, #f6f6f6);
   }
   &__plus-3 {
-
+    @include plus(60%, 60%, 300px, 300px, 85px, #f6f6f6);
   }
   &__plus-4 {
-
-}
+    @include plus(-5%, 82%, 300px, 300px, 85px, #f6f6f6);
+  }
 }

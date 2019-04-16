@@ -87,9 +87,9 @@
     }
   }
   &__plus-2 {
-    @include plus(53%, 7%, 84px, 84px, 7px, #ed1c24);
+    @include plus(53%, 28%, 84px, 84px, 7px, #ed1c24);
     @media (max-width: 1280px) {
-      @include plus-position(53%, 7%, 57px, 57px, 7px)
+      @include plus-position(53%, 28%, 57px, 57px, 7px)
     }
   }
 }
