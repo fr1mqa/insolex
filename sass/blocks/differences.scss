@@ -1,0 +1,126 @@
+.differences {
+  padding: 80px 0 60px;
+  @media (max-width: 1280px) {
+    padding: 50px 0 20px;
+  }
+  & .container {
+    border-bottom: 3px solid $differences-border-color;
+  }
+  &__title {
+    margin: 0 0 100px;
+    display: flex;
+    flex-direction: column;
+    color: $differences-title-color;
+    font-family: $GoogleSans-Bold;
+    font-size: 67px;
+    line-height: 71px;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    text-align: center;
+    @media (max-width: 1280px) {
+      margin: 0 0 80px;
+      font-size: 44px;
+      line-height: 47px;
+      letter-spacing: -0.79px;
+    }
+  }
+  &__subtitle {
+    align-self: center;
+    padding: 0 30px 75px;
+    border-bottom: 3px solid $differences-border-color;
+    &--red {
+      color: $differences-subtitle-color;
+    }
+  }
+  &__list {
+    @media (max-width: 900px) {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  &__item {
+    display: flex;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    flex-shrink: 0;
+    @media (max-width: 1280px) {
+      width: 180px;
+    }
+  }
+  &__icon-1 {
+    width: 55%;
+  }
+  &__icon-2 {
+    width: 21%;
+    align-self: flex-start;
+  }
+  &__icon-3 {
+    width: 50%;
+    height: 80px;
+    align-self: flex-start;
+  }
+  &__icon-4 {
+    width: 40%;
+    height: 80px;
+    align-self: flex-start;
+  }
+  &__icon-5 {
+    width: 50%;
+    align-self: flex-start;
+  }
+  &__icon-6 {
+    width: 48%;
+  }
+  &__icon-7 {
+    width: 45%;
+    align-self: flex-start;
+  }
+  &__icon-8 {
+    width: 38%;
+    align-self: flex-start;
+  }
+  &__icon-9 {
+    width: 46%;
+    align-self: flex-start;
+  }
+
+  &__text-wrapper {
+
+  }
+  &__name {
+    margin: 0 0 35px;
+    color: $differences-name-color;
+    font-family: $GoogleSans-Bold;
+    font-size: 29px;
+    line-height: 29px;
+    letter-spacing: -0.4px;
+    @media (max-width: 1280px) {
+      margin: 0 0 25px;
+      font-size: 22px;
+      line-height: 23px;
+      letter-spacing: -0.4px;
+    }
+  }
+  &__description {
+    margin: 0 0 65px;
+    color: $differences-description-color;
+    font-family: $GoogleSans-Regular;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -0.29px;
+    @media (max-width: 1280px) {
+      margin: 0 0 45px;
+      font-size: 16px;
+      line-height: 23px;
+      letter-spacing: -0.29px;
+    }
+  }
+}

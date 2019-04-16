@@ -39,15 +39,17 @@
     }
   }
   &__text {
-    margin: 0;
+    margin: 0 0 30px;
+    display: flex;
+    flex-direction: column;
     color: $contacts-title-color;
     font-family: $GoogleSans-Regular;
     font-size: 24px;
-    line-height: 71px;
+    line-height: 29px;
     letter-spacing: -0.4px;
     @media (max-width: 1280px) {
       font-size: 16px;
-      line-height: 46px;
+      line-height: 18px;
     }
     @media (max-width: 900px) {
       font-size: 13px;

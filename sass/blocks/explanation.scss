@@ -1,0 +1,92 @@
+.explanation {
+  padding: 120px 0 70px;
+  @media (max-width: 1280px) {
+    padding: 90px 0 40px;
+  }
+  & .container {
+    background: url('../img/question.png') no-repeat;
+    background-position: center center;
+    border-bottom: 3px solid $explanation-border-color;
+  }
+  &__title {
+    margin: 0 0 60px;
+    color: $explanation-title-color;
+    font-family: $GoogleSans-Bold;
+    font-size: 67px;
+    line-height: 71px;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    text-align: center;
+    @media (max-width: 1280px) {
+      margin: 0 0 40px;
+      font-size: 44px;
+      line-height: 47px;
+      letter-spacing: -0.79px;
+    }
+  }
+  &__subtitle {
+    margin: 0 0 110px;
+    display: flex;
+    flex-direction: column;
+    color: $explanation-subtitle-color;
+    font-family: $GoogleSans-Regular;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    @media (max-width: 1280px) {
+      margin: 0 0 90px;
+      font-size: 19px;
+      line-height: 23px;
+      letter-spacing: -0.34px;
+    }
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__item {
+    position: relative;
+    width: 420px;
+    margin-bottom: 100px;
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+    &:last-child {
+      width: 90%;
+    }
+    @media (max-width: 1280px) {
+      width: 280px;
+      margin-bottom: 55px;
+      padding-left: 50px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: calc(50% - 40px);
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 40px;
+      border-color: transparent transparent transparent $explanation-border-color;
+      @media (max-width: 1280px) {
+        top: calc(50% - 20px);
+        border-width: 20px;
+      }
+    }
+  }
+  &__text {
+    margin: 0;
+    color: $explanation-text-color;
+    font-family: $GoogleSans-Regular;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.29px;
+    @media (max-width: 1280px) {
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: -0.29px;
+    }
+  }
+}
