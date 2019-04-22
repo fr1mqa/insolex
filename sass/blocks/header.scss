@@ -1,5 +1,8 @@
 .header {
-  position: relative;
+  position: sticky;
+  top:0;
+  background: $header-bg-color;
+  z-index: 50;
   & .container {
     display: flex;
     justify-content: space-between;

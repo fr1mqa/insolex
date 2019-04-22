@@ -184,7 +184,7 @@
       }
       @media (max-width: 1280px) {
         padding-right: 55px;
-        margin-bottom: -20px;
+        margin-bottom: -40px;
       }
       @media (max-width: 950px) {
         margin-bottom: 40px;
@@ -313,9 +313,10 @@
   &__bullet-3 {
     width: 550px;
     height: 160px;
+    & img {
+      width: 100%;
+    }
     @media (max-width: 1280px) {
-      position: relative;
-      top: -20px;
       width: 350px;
     }
     @media (max-width: 950px) {
