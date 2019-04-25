@@ -158,6 +158,8 @@
       @media (max-width: 950px) {
         margin-bottom: 40px;
         margin-left: 0;
+        padding-right: 0;
+        align-self: flex-start;
       }
     }
     &:nth-child(3) {
@@ -216,6 +218,7 @@
         padding-right: 0;
         margin-left: 0;
         margin-bottom: 40px;
+        align-self: flex-start;
       }
     }
     &:nth-child(5) {

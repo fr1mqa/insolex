@@ -153,6 +153,10 @@
   &__inner {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 900px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__image {
     width: 93%;
@@ -180,12 +184,9 @@
         margin-bottom: 60px;
       }
       @media (max-width: 900px) {
-        flex-direction: column;
         justify-content: center;
-        align-items: center;
         &:last-child .results__image-item:last-child {
           order: 1;
-          margin-bottom: 100px;
         }
         &:last-child .results__image-item:first-child {
           order: 2;
@@ -206,7 +207,6 @@
           margin-bottom: 0;
         }
         min-height: 390px;
-        margin-bottom: 100px;
       }
     }
     &-caption {
