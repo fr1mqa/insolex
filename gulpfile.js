@@ -88,22 +88,22 @@ gulp.task("js:copy", function() {
 });
 
 gulp.task("js:update", function(done) {
-    server.reload();
-    done();
+  server.reload();
+  done();
 });
 
 gulp.task("serve", function() {
-    server.init({
-        server: "build/",
-        notify: false,
-        open: true,
-        cors: true,
-        ui: false
-    });
+  server.init({
+    server: "build/",
+    notify: false,
+    open: true,
+    cors: true,
+    ui: false
+  });
 
-    gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-    gulp.watch("*.pug", ["html"]);
-    gulp.watch("js/script.js", ["js:copy"]);
+  gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("*.pug", ["html"]);
+  gulp.watch("js/script.js", ["js:copy"]);
 });
 
 gulp.task ("build", function(fn) {
