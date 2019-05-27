@@ -1,0 +1,94 @@
+.products {
+  overflow: hidden;
+  & .container {
+    position: relative;
+    min-height: 680px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("../img/insoles-pack.jpg") no-repeat right top;
+    background-size: auto 100%;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: url("../img/insoles-pack@2x.jpg");
+    }
+    @media (min-device-pixel-ratio: 3), (min-resolution: 288dpi) {
+      background-image: url("../img/insoles-pack@3x.jpg");
+    }
+    @media (max-width: 1280px) {
+    }
+    @media (max-width: 900px) {
+      justify-content: flex-start;
+      min-height: 1000px;
+      background-size: auto 670px;
+      background-position: center bottom;
+      padding-top: 50px;
+    }
+  }
+  &__title {
+    margin: 0 0 55px;
+    color: $products-title-color;
+    font-family: $GoogleSans-Bold;
+    font-size: 65px;
+    letter-spacing: -1.2px;
+    text-transform: uppercase;
+    @media(max-width: 1280px) {
+      font-size: 44px;
+      letter-spacing: -0.8px;
+      margin: 0 0 40px;
+    }
+    @media (max-width: 900px) {
+      font-size: 35px;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+  &__description {
+    margin: 0 0 8px;
+    font-family: $GoogleSans-Regular;
+    font-size: 13px;
+    line-height: 19px;
+    color: $products-description-color;
+    letter-spacing: -0.23px;
+  }
+  &__select {
+    margin: 0 0 75px;
+    width: 190px;
+    border: none;
+    font-family: $GoogleSans-Bold;
+    font-size: 34px;
+    letter-spacing: -0.6px;
+    color: $products-select-color;
+    background: url(../img/triangle.png) no-repeat right center;
+    appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+  }
+  &__button {
+    display: block;
+    padding: 18px 61px;
+    color: $info-button-text-color;
+    font-family: $GoogleSans-Bold;
+    font-size: 39px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: $info-button-bg-color url('../img/button-bg.png') no-repeat;
+    background-size: 100% auto;
+    border: none;
+    border-top: 6px solid $info-button-border-color;
+    border-radius: 15px;
+    box-shadow: 0 0 80px $info-button-shadow-color;
+    cursor: pointer;
+    @media (max-width: 1280px) {
+      padding: 10px 43px;
+      font-size: 25px;
+    }
+    @media (max-width: 900px) {
+      font-size: 21px;
+      border: none;
+    }
+  }
+}
