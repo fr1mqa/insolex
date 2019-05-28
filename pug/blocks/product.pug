@@ -2,22 +2,31 @@ section.products
     .container
         h1.products__title Продукция
         form(method='POST').products__form
-            p.products__description Размер / Длина стопы
-            select.products__select
-                option(value="1") 35 / 225
-                option(value="2") 36 / 230
-                option(value="3") 37 / 235
-                option(value="4") 37.5 / 240
-                option(value="5") 38 / 245
-                option(value="6") 39 / 250
-                option(value="7") 40 / 255
-                option(value="8") 40.5 / 260
-                option(value="9") 41 / 265
-                option(value="10") 42 / 270
-                option(value="11") 43 / 275
-                option(value="12") 43.5 / 280
-                option(value="13") 44 / 285
-                option(value="14") 45 / 290
-                option(value="15") 46 / 295
-                option(value="15") 47 / 305
+            .products__wrapper
+                .products__inner
+                    p.products__description Размер(RUS) / Длина стопы(мм)
+                    select.products__select
+                        option(value="1") 35 / 225
+                        option(value="2") 36 / 230
+                        option(value="3") 37 / 235
+                        option(value="4") 37.5 / 240
+                        option(value="5") 38 / 245
+                        option(value="6") 39 / 250
+                        option(value="7") 40 / 255
+                        option(value="8") 40.5 / 260
+                        option(value="9") 41 / 265
+                        option(value="10") 42 / 270
+                        option(value="11") 43 / 275
+                        option(value="12") 43.5 / 280
+                        option(value="13") 44 / 285
+                        option(value="14") 45 / 290
+                        option(value="15") 46 / 295
+                        option(value="15") 47 / 305
+                .products__inner
+                    p.products__description Цена:
+                    p.products__price 3 500 рублей
             button(type='submit').products__button Купить
+        p.products__text Производитель: Сафонов Артем Владимирович
+            span ИНН 40280806195
+        p.products__text г.Калуга ул.Карачевская 3,27 +7(903)7775513.
+        p.products__text Доставка осуществляется почтой России.
