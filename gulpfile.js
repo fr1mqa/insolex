@@ -20,6 +20,7 @@ gulp.task("clean", function() {
 });
 
 gulp.task("copy", function() {
+    gulp.src("img/favicon.ico").pipe(gulp.dest("build"));
     return gulp.src([
         "fonts/**/*.{woff,woff2}",
         "img/**",
