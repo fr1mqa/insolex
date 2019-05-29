@@ -105,7 +105,7 @@
     &--seventh {
       flex-direction: column;
       @media (max-width: 900px) {
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: row;
       }
     }
@@ -183,9 +183,11 @@
   }
   &__icon-7 {
     width: 81px;
+    height: 120px;
     align-self: flex-start;
     margin: 0 auto;
     @media (max-width: 900px) {
+      align-self: center;
       margin: 0;
     }
   }
