@@ -24,9 +24,7 @@ gulp.task("copy", function() {
     return gulp.src([
         "fonts/**/*.{woff,woff2}",
         "img/**",
-        "js/**",
-        "lib/**",
-        "*.php"
+        "js/**"
     ], {
         base: "."
     })
@@ -74,18 +72,24 @@ gulp.task("html", function buildHTML() {
 });
 
 gulp.task("js", function() {
-    gulp.src("js/script.js")
+    gulp.src("js/*.js")
         .pipe(gulp.dest("build/js"))
         .pipe(jsmin())
-        .pipe(rename("script.min.js"))
+        .pipe(rename(function (path) {
+            path.basename += ".min";
+            path.extname = ".js";
+        }))
         .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("js:copy", function() {
-    return gulp.src("*js/script.js")
+    return gulp.src("*js/*.js")
         .pipe(gulp.dest("build/js"))
         .pipe(jsmin())
-        .pipe(rename("script.min.js"))
+        .pipe(rename(function (path) {
+            path.basename += ".min";
+            path.extname = ".js";
+        }))
         .pipe(gulp.dest("build/js"))
         .pipe(server.stream());
 });
@@ -106,7 +110,7 @@ gulp.task("serve", function() {
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.pug", ["html"]);
-  gulp.watch("js/script.js", ["js:copy"]);
+  gulp.watch("js/*.js", ["js:copy"]);
 });
 
 gulp.task ("build", function(fn) {
