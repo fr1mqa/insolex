@@ -1,0 +1,20 @@
+section.modal
+    .modal__wrapper
+        form(class="modal__form" action="https://money.yandex.ru/eshop.xml" method="post")
+            input(name="shopId" value="607074" type="hidden" required)
+            input(name="scid" value="945459" type="hidden" required)
+            input(name="paymentType" value="AC" type="hidden")
+            label(for="price").modal__label К оплате
+            input(class="modal__price" name="sum" value="3500" type="number" min="3500" max="3500" placeholder="0.0" required id="price")
+            label(for="name").modal__label Имя покупателя
+            input(class="modal__number" required name="customerNumber" value="" size="64" id="name")
+            label(for="phone").modal__label Телефон покупателя
+            input(class="modal__name" name="custName" value="" size="64" id="phone" type="tel" pattern="[0-9]*")
+            label(for="address").modal__label Адресс доставки
+            input(class="modal__address" name="custAddr" value="" size="64" id="address" required)
+            label(for="email").modal__label Эл. почта покупателя
+            input(class="modal__email" name="custEmail" value="" size="64" type="email" id="email")
+            label(for="comments").modal__label Комментарии к заказу
+            textarea(class="modal__comments" name="orderDetails" value="" rows="5" cols="64" wrap="soft" id="comments")
+            input(class="modal__button" type="submit" value="Купить")
+            .modal__close

@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  top:0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  overflow-y: scroll;
+  &__show {
+    display: block;
+  }
+  &__wrapper {
+    width: 100%;
+    max-width: 380px;
+    margin: 90px auto 0;
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background: #eee;
+    transition: background .3s ease-out;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
+  }
+  &__label {
+    margin: 0 0 5px;
+    font-family: $GoogleSans-Regular;
+    color: #999;
+  }
+  &__price {
+    margin-bottom: 15px;
+    height: 36px;
+    padding: 0 10px;
+  }
+  &__number {
+    margin-bottom: 15px;
+    height: 36px;
+    padding: 0 10px;
+  }
+  &__name {
+    margin-bottom: 15px;
+    height: 36px;
+    padding: 0 10px;
+  }
+  &__address {
+    margin-bottom: 15px;
+    height: 36px;
+    padding: 0 10px;
+  }
+  &__email {
+    margin-bottom: 15px;
+    height: 36px;
+    padding: 0 10px;
+  }
+  &__comments {
+    margin-bottom: 35px;
+    width: 100%;
+    max-width: 340px;
+    min-width: 340px;
+    padding: 0 10px;
+    @media (max-width: 380px) {
+      min-width: 280px!important;
+      width: 100%!important;
+    }
+  }
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding: 18px 61px;
+    max-width: 280px;
+    color: $info-button-text-color;
+    font-family: $GoogleSans-Bold;
+    font-size: 39px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: $info-button-bg-color url('../img/button-bg.png') no-repeat;
+    background-size: 100% auto;
+    border: none;
+    border-top: 6px solid $info-button-border-color;
+    border-radius: 15px;
+    box-shadow: 0 0 80px $info-button-shadow-color;
+    cursor: pointer;
+    @media (max-width: 1280px) {
+      padding: 10px 43px;
+      font-size: 25px;
+    }
+    @media (max-width: 900px) {
+      font-size: 21px;
+      border: none;
+    }
+  }
+  &__close {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 9px;
+      width: 20px;
+      height: 2px;
+      background-color: #eee;
+      transform: rotate(45deg);
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: 9px;
+      width: 20px;
+      height: 2px;
+      background-color: #eee;
+      transform: rotate(-45deg);
+    }
+  }
+}

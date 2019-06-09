@@ -7,3 +7,8 @@
 @import "blocks/logo.scss";
 @import "blocks/navigation.scss";
 @import "blocks/products.scss";
+@import "blocks/modal.scss";
+
+html {
+  min-height: 100%;
+}
