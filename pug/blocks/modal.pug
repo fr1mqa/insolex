@@ -6,15 +6,31 @@ section.modal
             input(name="paymentType" value="AC" type="hidden")
             label(for="price").modal__label К оплате
             input(class="modal__price" name="sum" value="3500" type="number" min="3500" max="3500" placeholder="0.0" required id="price")
+            label(for="size").modal__label Размер(RUS) / Длина стопы(мм)
+            select(name="orderDetails" id="size").modal__select
+                option(value="Размер 35 / 225") 35 / 225
+                option(value="Размер 36 / 230") 36 / 230
+                option(value="Размер 37 / 235") 37 / 235
+                option(value="Размер 37.5 / 240") 37.5 / 240
+                option(value="Размер 38 / 245") 38 / 245
+                option(value="Размер 39 / 250") 39 / 250
+                option(value="Размер 40 / 255") 40 / 255
+                option(value="Размер 40.5 / 260") 40.5 / 260
+                option(value="Размер 41 / 265") 41 / 265
+                option(value="Размер 42 / 270") 42 / 270
+                option(value="Размер 43 / 275") 43 / 275
+                option(value="Размер 43.5 / 280") 43.5 / 280
+                option(value="Размер 44 / 285") 44 / 285
+                option(value="Размер 45 / 290") 45 / 290
+                option(value="Размер 46 / 295") 46 / 295
+                option(value="Размер 47 / 305") 47 / 305
             label(for="name").modal__label Имя покупателя
-            input(class="modal__number" required name="customerNumber" value="" size="64" id="name")
-            label(for="phone").modal__label Телефон покупателя
-            input(class="modal__name" name="custName" value="" size="64" id="phone" type="tel" pattern="[0-9]*")
-            label(for="address").modal__label Адресс доставки
-            input(class="modal__address" name="custAddr" value="" size="64" id="address" required)
+            input(class="modal__name" name="custName" value="" size="64" id="name" type="text")
+            label(for="number").modal__label Телефон покупателя
+            input(class="modal__number" required name="customerNumber" value="" type="tel" size="64" id="number" pattern="[0-9]*")
+            label(for="address").modal__label Адрес доставки
+            input(class="modal__address" name="custAddr" value="" size="100" id="address" required)
             label(for="email").modal__label Эл. почта покупателя
             input(class="modal__email" name="custEmail" value="" size="64" type="email" id="email")
-            label(for="comments").modal__label Комментарии к заказу
-            textarea(class="modal__comments" name="orderDetails" value="" rows="5" cols="64" wrap="soft" id="comments")
             input(class="modal__button" type="submit" value="Купить")
             .modal__close

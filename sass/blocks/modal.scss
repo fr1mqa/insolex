@@ -53,20 +53,9 @@
     padding: 0 10px;
   }
   &__email {
-    margin-bottom: 15px;
+    margin-bottom: 50px;
     height: 36px;
     padding: 0 10px;
-  }
-  &__comments {
-    margin-bottom: 35px;
-    width: 100%;
-    max-width: 340px;
-    min-width: 340px;
-    padding: 0 10px;
-    @media (max-width: 380px) {
-      min-width: 280px!important;
-      width: 100%!important;
-    }
   }
   &__button {
     display: block;
@@ -119,5 +108,10 @@
       background-color: #eee;
       transform: rotate(-45deg);
     }
+  }
+  &__select {
+    margin-bottom: 15px;
+    height: 36px;
+    padding: 0 10px;
   }
 }
