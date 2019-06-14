@@ -68,7 +68,7 @@
     &--first {
       flex-direction: column;
       @media (max-width: 900px) {
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: row;
       }
     }
